@@ -19,7 +19,7 @@ server {
 	}
 
 	location /ssh {
-		proxy_pass http://127.0.0.1:4200/;
+		proxy_pass https://127.0.0.1:4200/;
 		proxy_redirect	default;
 		#proxy_set_header   Host             $host;
 		#proxy_set_header   X-Real-IP        $remote_addr;

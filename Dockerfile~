@@ -34,6 +34,7 @@ RUN cat /etc/nginx/ssl/nginx.crt /etc/nginx/ssl/nginx.key > /etc/nginx/ssl/nginx
 ADD ./supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 ADD ./default /etc/nginx/sites-available/default
 ADD ./nginx.conf /etc/nginx/nginx.conf
+ADD ./shellinabox /etc/init.d/shellinabox
 
 EXPOSE 22 80 443 4200
 CMD ["/usr/bin/supervisord"]
